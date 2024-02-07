@@ -1,0 +1,26 @@
+cabal-version:      3.4
+name:               y
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             kwonryul
+maintainer:         pkr08205@gmail.com
+-- copyright:
+category:           Web
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+    exposed-modules:  MyLib, Mod1, Init
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.19.0.0, containers
+    hs-source-dirs:   lib
+    default-language: Haskell2010
